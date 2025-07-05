@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface Message {
   id: number;
@@ -91,10 +92,14 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 p-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-white flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-bold">H</span>
-            </div>
+          <h1 className="text-2xl font-bold text-gray-800 dark:text-white flex items-center gap-3">
+            <Image 
+              src="/log-removebg-preview.png" 
+              alt="Hasitha.AI Logo" 
+              width={40}
+              height={40}
+              className="object-contain"
+            />
             Hasitha.AI
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
@@ -108,9 +113,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto space-y-4">
           {messages.length === 0 && (
             <div className="text-center py-12">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">H</span>
-              </div>
+              <Image 
+                src="/log-removebg-preview.png" 
+                alt="Hasitha.AI Logo" 
+                width={80}
+                height={80}
+                className="object-contain mx-auto mb-4"
+              />
               <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 Welcome to Hasitha.AI!
               </h2>
