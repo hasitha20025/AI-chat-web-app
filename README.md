@@ -95,3 +95,6 @@ Hasitha.AI is your personal AI assistant, designed to provide intelligent, helpf
 ## License
 
 MIT License - feel free to use this project for your own purposes.
+
+
+how to prevent crack in walls

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hasitha.AI - Your Personal AI Assistant",
+  title: "Your Personal AI Assistant",
   description: "Intelligent AI assistant powered by Google Gemini. Chat, ask questions, and get personalized help with Hasitha.AI",
 };
 
